@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short cut icon" type="Images/jpg" href="images/LOGO.png">
+    <title>Assesment Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+
+</head>
+
+<body>
+    <!----------------------------------Header2 Starts---------------------------->
+<div id="header2">
+<div class="container">
+    <nav>
+        <img src="images/LOGO.png" class="Logo">
+        <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="portfolio.html">Projects</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+   </nav>
+   <!----------------------------------Header2 Ends---------------------------->
+   </div>
+   </div>
+
+
+   <!------------------------Aboutme Starts------------------------>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+<img src="images/Passport.jpg">
+            </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentap('Skills')">Who I Am</p>
+                            <p class="tab-links"onclick="opentap('Experience')">What I'm Learning</p>
+                            <p class="tab-links"onclick="opentap('Skills2')">My Skills</p>
+                         </div>
+
+                         <!---------------------------Tab-content-1------------------>
+
+                         <div class="tab-contents active-tab" id="Skills">
+                            <p>I’m a UI/UX designer passionate about creating intuitive <br>and engaging digital experiences. 
+                                With a background in <br>Electrical Electronics Engineering, I combine technical <br>insight with
+                                 creative design to craft user-centered solutions <br>that are both functional and visually 
+                                 compelling.<br><br><span>Let’s bring ideas to life 🚀!</span></p> 
+                        </div>
+                        
+                        <!---------------------------Tab-content-2-------------------->
+                        <div class="tab-contents" id="Experience">
+                            "I'm a passionate UI/UX designer currently expanding <br>my skill set by learning frontend development through <br>She Code Africa. 
+                            I'm excited to bridge design and development <br>to create seamless, user-friendly digital experiences."<p></p>  
+                           </div>
+
+<!---------------------------Tab-content-3-------------------->
+
+<div class="tab-contents" id="Skills2">
+    <ul>
+       <li><strong><span>UI/UX (Mobile And Web Apps)</span></strong><br>
+           User Research<br>User Flow<br>User Persona<br>Information Architecture<br>User Interface<br>
+           Useability Testing<br>Design System<br>Prototyping<br>Figma<br>Miro<br>Notion</li>
+   </div>
+    </ul>
+    <a href="portfolio.html" class="btn">My Works</a>
+    </div>        
+                           <!----------------------------------About-me Ends---------------------------->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------Script Starts---------------------------->
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentap(tabname){
+for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+}
+
+ for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<!----------------------------------Script Ends---------------------------->
+
+
+<!----------------------------------Footer Starts---------------------------->
+<div class="footer-content">
+    <p>copyright © 2024 SheCode-Africa Assesment-project1. All Rights Reserved.
+    </p>
+    <div class="social-icons">
+        <a href=""><i class="fab fa-facebook"></i> </a>
+        <a href="https://www.linkedin.com/in/mercy-udongo-7657a3112?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlcESr%2FJJQ46ynwCIv%2BSgtw%3D%3D"><i class="fab fa-linkedin"></i> </a>
+        <a href=""><i class="fab fa-instagram"></i> </a>
+    </div>
+</div>
+<!----------------------------------Footer Ends---------------------------->
+
+</body>
+</html>
+   
